@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
@@ -18,14 +18,14 @@
   <meta property="og:title" content="Ingeniería en Sistemas de Gestión | Auditorías, Asesorías & Normas NCh - ISO">
   <meta property="og:description" content="Agenda tu auditoría interna • Solicita asesoría • Implementa un Sistema de Gestión. Contacto: igca.gestion@gmail.com | +56 9 6633 1435">
   <meta property="og:url" content="https://www.instagram.com/ingenieria_sistemas_gestion/">
-  <meta property="og:image" content="assets/logo.svg?v=11">
+  <meta property="og:image" content="assets/logo.svg?v=12">
   <meta property="og:type" content="website">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/logo.svg?v=11">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg?v=12">
 
-  <!-- Estilos v=11 con Logo Alta Resolución PUDU IT Solutions -->
-  <link rel="stylesheet" href="styles.css?v=11">
+  <!-- Estilos v=12 Responsivo Móvil Auditado -->
+  <link rel="stylesheet" href="styles.css?v=12">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -48,12 +48,12 @@
   </div>
 
   <!-- ==========================================================================
-       1. NAVBAR GLASSMORPHISM AUDITADO
+       1. NAVBAR GLASSMORPHISM AUDITADO EN MÓVILES
        ========================================================================== -->
   <header class="navbar">
     <div class="container">
       <a href="#" class="brand-logo">
-        <img src="assets/logo.svg?v=11" alt="Ingeniería en Sistemas de Gestión" width="280" height="58">
+        <img src="assets/logo.svg?v=12" alt="Ingeniería en Sistemas de Gestión" width="280" height="58">
       </a>
 
       <nav class="nav-menu">
@@ -65,6 +65,15 @@
         <a href="#sectores" class="nav-link">Sectores</a>
         <a href="#garantia" class="nav-link">Garantía ISG</a>
         <a href="#faq" class="nav-link">Preguntas</a>
+
+        <div style="margin-top: 16px; width: 100%; display: flex; flex-direction: column; gap: 12px;" class="mobile-only-actions">
+          <a href="https://wa.me/56966331435" class="btn btn-whatsapp" target="_blank" style="width: 100%;">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp +56 9 6633 1435
+          </a>
+          <a href="#cotizar" class="btn btn-primary open-quote-modal" style="width: 100%;">
+            <i class="fa-solid fa-calendar-check"></i> Agendar Auditoría
+          </a>
+        </div>
       </nav>
 
       <div class="nav-actions">
@@ -80,14 +89,14 @@
   </header>
 
   <!-- ==========================================================================
-       2. HERO SECTION CON DATOS OFICIALES Y RIGOR TÉCNICO
+       2. HERO SECTION AUDITADO EN MÓVILES
        ========================================================================== -->
   <section id="inicio" class="hero">
     <div class="container">
       <div class="hero-grid">
         <div class="hero-content">
           <span class="badge badge-navy">
-            <i class="fa-solid fa-certificate"></i> NCH • ISO | Calidad • Ambiente • Prevención de Riesgos
+            <i class="fa-solid fa-certificate"></i> NCH • ISO | Calidad • Ambiente • Prevención
           </span>
           <h1>Ingeniería en <span>Sistemas de Gestión</span></h1>
           
@@ -138,17 +147,17 @@
         <div class="hero-card-widget">
           <div class="widget-title">
             <span style="font-weight: 800; color: var(--primary-navy);">Especialidades ISG</span>
-            <span class="badge badge-gold"><i class="fa-solid fa-shield-halved"></i> Normativa Chile</span>
+            <span class="badge badge-gold"><i class="fa-solid fa-shield-halved"></i> Chile</span>
           </div>
 
           <div class="norm-tag-grid">
             <div class="norm-tag-card">
               <div class="norm-code">NCh 2728:2015</div>
-              <div class="norm-desc">Calidad para OTECs & SENCE</div>
+              <div class="norm-desc">Calidad OTECs & SENCE</div>
             </div>
             <div class="norm-tag-card">
               <div class="norm-code">ISO 9001:2015</div>
-              <div class="norm-desc">Gestión de la Calidad (PHVA)</div>
+              <div class="norm-desc">Gestión de la Calidad</div>
             </div>
             <div class="norm-tag-card">
               <div class="norm-code">ISO 14001:2015</div>
@@ -156,7 +165,7 @@
             </div>
             <div class="norm-tag-card">
               <div class="norm-code">ISO 45001:2018</div>
-              <div class="norm-desc">Prevención de Riesgos IPER</div>
+              <div class="norm-desc">Prevención de Riesgos</div>
             </div>
           </div>
 
@@ -164,7 +173,7 @@
             <div class="guarantee-icon">📋</div>
             <div class="guarantee-text">
               <strong>Soluciones Integrales de Gestión</strong>
-              Garantizamos la preparación técnica para superar auditorías de certificación de Casas Certificadoras y SENCE.
+              Garantizamos la preparación técnica para superar auditorías de certificación SENCE y Casas Certificadoras.
             </div>
           </div>
         </div>
@@ -180,11 +189,11 @@
       <div class="stats-grid">
         <div class="stat-item">
           <h3>100<span>%</span></h3>
-          <p class="stat-label">Conformidad en Auditorías SENCE/ISO</p>
+          <p class="stat-label">Conformidad en Auditorías</p>
         </div>
         <div class="stat-item">
           <h3>4<span>+</span></h3>
-          <p class="stat-label">Normas NCh e ISO Especializadas</p>
+          <p class="stat-label">Normas NCh e ISO</p>
         </div>
         <div class="stat-item">
           <h3>0</h3>
@@ -192,7 +201,7 @@
         </div>
         <div class="stat-item">
           <h3>Chile</h3>
-          <p class="stat-label">Cobertura de Asesoría Presencial / Remota</p>
+          <p class="stat-label">Cobertura Presencial / Remota</p>
         </div>
       </div>
     </div>
@@ -259,7 +268,7 @@
   </section>
 
   <!-- ==========================================================================
-       5. SECCIÓN DE NORMATIVAS REDISEÑADA EN CARDS GLASSMORPHISM
+       5. SECCIÓN DE NORMATIVAS EN CARDS GLASSMORPHISM
        ========================================================================== -->
   <section id="normativas" class="section-padding">
     <div class="container">
@@ -348,8 +357,8 @@
       </div>
 
       <div style="text-align: center;">
-        <a href="https://wa.me/56966331435?text=Hola%20Ingenier%C3%ADa%20en%20Sistemas%20de%20Gesti%C3%B3n,%20quisiera%20consultar%20sobre%20asesor%C3%ADa%20normativa" class="btn btn-primary" target="_blank">
-          <i class="fa-brands fa-whatsapp"></i> Consulta Técnica Directa con Asesor Senior
+        <a href="https://wa.me/56966331435?text=Hola%20Ingenier%C3%ADa%20en%20Sistemas%20de%20Gesti%C3%B3n,%20quisiera%20consultar%20sobre%20asesor%C3%ADa%20normativa" class="btn btn-primary" target="_blank" style="width: 100%; max-width: 480px;">
+          <i class="fa-brands fa-whatsapp"></i> Consulta Técnica con Asesor Senior
         </a>
       </div>
     </div>
@@ -533,11 +542,11 @@
           <p id="result-desc" class="result-desc">Cargando análisis de resultados...</p>
 
           <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-            <button id="btn-quiz-whatsapp" class="btn btn-whatsapp">
-              <i class="fa-brands fa-whatsapp"></i> Recibir Evaluación en WhatsApp Oficial
+            <button id="btn-quiz-whatsapp" class="btn btn-whatsapp" style="width: 100%; max-width: 380px;">
+              <i class="fa-brands fa-whatsapp"></i> Recibir Evaluación en WhatsApp
             </button>
-            <a href="#" class="btn btn-secondary open-quote-modal">
-              <i class="fa-solid fa-calendar-check"></i> Solicitar Asesoría Personalizada
+            <a href="#" class="btn btn-secondary open-quote-modal" style="width: 100%; max-width: 380px;">
+              <i class="fa-solid fa-calendar-check"></i> Solicitar Asesoría
             </a>
           </div>
         </div>
@@ -624,7 +633,7 @@
             <h2>Garantía Técnica de Acompañamiento y Cero Reprocesos</h2>
             <p>En <strong>Ingeniería en Sistemas de Gestión</strong> no solo entregamos documentos; respaldamos tu auditoría hasta la obtención definitiva del certificado de acreditación.</p>
 
-            <a href="https://wa.me/56966331435?text=Hola,%20deseo%20consultar%20sobre%20la%20garant%C3%ADa%20de%20acompa%C3%B1amiento%20para%20mi%20auditor%C3%ADa" class="btn btn-whatsapp" target="_blank">
+            <a href="https://wa.me/56966331435?text=Hola,%20deseo%20consultar%20sobre%20la%20garant%C3%ADa%20de%20acompa%C3%B1amiento%20para%20mi%20auditor%C3%ADa" class="btn btn-whatsapp" target="_blank" style="width: 100%; max-width: 400px;">
               <i class="fa-brands fa-whatsapp"></i> Conversar con Asesor Senior
             </a>
           </div>
@@ -632,7 +641,7 @@
           <div class="guarantee-points">
             <div class="guarantee-point-item">
               <i class="fa-solid fa-user-shield"></i>
-              <span>Acompañamiento directo durante el día de la Auditoría Externa</span>
+              <span>Acompañamiento directo el día de la Auditoría Externa</span>
             </div>
 
             <div class="guarantee-point-item">
@@ -642,7 +651,7 @@
 
             <div class="guarantee-point-item">
               <i class="fa-solid fa-award"></i>
-              <span>100% de Cumplimiento Normativo exigido por SENCE y Casas Certificadoras</span>
+              <span>100% Cumplimiento Normativo exigido por SENCE y Casas Certificadoras</span>
             </div>
           </div>
         </div>
@@ -749,8 +758,8 @@
       
       <div style="text-align: center; margin-bottom: 24px;">
         <span class="badge badge-navy"><i class="fa-solid fa-paper-plane"></i> Contacto Oficial</span>
-        <h3 style="font-size: 1.6rem; margin-top: 10px;">Solicita tu Cotización o Asesoría</h3>
-        <p style="font-size: 0.9rem; color: var(--text-muted);">Completa tus datos y nos comunicaremos contigo vía WhatsApp o correo electrónico.</p>
+        <h3 style="font-size: 1.5rem; margin-top: 10px;">Solicita tu Cotización o Asesoría</h3>
+        <p style="font-size: 0.88rem; color: var(--text-muted);">Completa tus datos y nos comunicaremos contigo vía WhatsApp o correo electrónico.</p>
       </div>
 
       <form id="quote-form">
@@ -809,7 +818,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="assets/logo.svg?v=11" alt="Ingeniería en Sistemas de Gestión Logo" width="280" height="58" style="filter: brightness(0) invert(1);">
+          <img src="assets/logo.svg?v=12" alt="Ingeniería en Sistemas de Gestión Logo" width="280" height="58" style="filter: brightness(0) invert(1);">
           <p>
             <strong>Ingeniería en Sistemas de Gestión</strong><br>
             ✔ Agenda tu auditoría interna<br>
@@ -848,11 +857,10 @@
       <div class="footer-bottom">
         <p>&copy; 2026 Ingeniería en Sistemas de Gestión (@ingenieria_sistemas_gestion). Todos los derechos reservados.</p>
         
-        <!-- Insignia de Acreditación de Desarrollo por PUDU IT SOLUTIONS (Alta Resolución) -->
         <div class="pudu-credit-badge">
           <span class="pudu-credit-text">Plataforma web desarrollada por</span>
           <div class="pudu-brand-link">
-            <img src="assets/pudu-logo.png?v=11" alt="PUDU IT Solutions - Prime Utility Digital Upgrade" class="pudu-logo-img">
+            <img src="assets/pudu-logo.png?v=12" alt="PUDU IT Solutions - Prime Utility Digital Upgrade" class="pudu-logo-img">
             <div class="pudu-brand-info">
               <span class="pudu-brand-name">PUDU IT SOLUTIONS</span>
               <span class="pudu-brand-tagline">PRIME UTILITY DIGITAL UPGRADE</span>
@@ -863,7 +871,7 @@
     </div>
   </footer>
 
-  <!-- Scripts JavaScript v=11 -->
-  <script src="app.js?v=11"></script>
+  <!-- Scripts JavaScript v=12 -->
+  <script src="app.js?v=12"></script>
 </body>
 </html>

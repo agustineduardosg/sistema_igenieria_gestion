@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * INGENIERÍA EN SISTEMAS DE GESTIÓN ISG - LÓGICA DE LA LANDING PAGE
+ * INGENIERÍA EN SISTEMAS DE GESTIÓN ISG - LÓGICA DE LA LANDING PAGE (v12 Mobile)
  * Diagnóstico interactivo, Menú Móvil Desplegable, Cotizador & WhatsApp
  * ==========================================================================
  */
@@ -22,15 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
   if (mobileToggleBtn && navMenu) {
     mobileToggleBtn.addEventListener('click', (e) => {
       e.stopPropagation();
-      navMenu.classList.toggle('mobile-active');
+      const isActive = navMenu.classList.toggle('mobile-active');
+      document.body.classList.toggle('mobile-menu-open', isActive);
       
       const icon = mobileToggleBtn.querySelector('i');
       if (icon) {
-        if (navMenu.classList.contains('mobile-active')) {
-          icon.className = 'fa-solid fa-xmark';
-        } else {
-          icon.className = 'fa-solid fa-bars';
-        }
+        icon.className = isActive ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
       }
     });
 
@@ -39,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener('click', () => {
         if (navMenu.classList.contains('mobile-active')) {
           navMenu.classList.remove('mobile-active');
+          document.body.classList.remove('mobile-menu-open');
           const icon = mobileToggleBtn.querySelector('i');
           if (icon) icon.className = 'fa-solid fa-bars';
         }
@@ -50,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!navMenu.contains(e.target) && !mobileToggleBtn.contains(e.target)) {
         if (navMenu.classList.contains('mobile-active')) {
           navMenu.classList.remove('mobile-active');
+          document.body.classList.remove('mobile-menu-open');
           const icon = mobileToggleBtn.querySelector('i');
           if (icon) icon.className = 'fa-solid fa-bars';
         }
@@ -289,7 +288,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const targetEl = document.querySelector(targetId);
       if (targetEl) {
         e.preventDefault();
-        const headerOffset = 90;
+        const headerOffset = 80;
         const elementPosition = targetEl.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
