@@ -1,6 +1,6 @@
 /* ==========================================================================
-   DESIGN SYSTEM - INGENIERÍA EN SISTEMAS DE GESTIÓN (v9 Rediseño Normativas)
-   Sección de Normativas Rediseñada en Tarjetas Glassmorphism de Alto Impacto
+   DESIGN SYSTEM - INGENIERÍA EN SISTEMAS DE GESTIÓN (v10 PUDU IT Solutions)
+   Acreditación de Desarrollo PUDU IT Solutions en Footer
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap');
@@ -1465,6 +1465,10 @@ img, svg {
   box-shadow: 0 12px 32px rgba(37, 211, 102, 0.6);
 }
 
+/* ==========================================================================
+   FOOTER OFICIAL & BADGE DE CRÉDITO PUDU IT SOLUTIONS
+   ========================================================================== */
+
 footer {
   background-color: var(--primary-navy-dark);
   color: #ffffff;
@@ -1513,6 +1517,76 @@ footer {
   text-align: center;
   color: #64748b;
   font-size: 0.88rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Badge de Créditos PUDU IT SOLUTIONS */
+.pudu-credit-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: var(--transition);
+}
+
+.pudu-credit-badge:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(0, 102, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.pudu-credit-text {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.pudu-brand-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.pudu-logo-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #ffffff;
+  padding: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.pudu-brand-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.pudu-brand-name {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 900;
+  font-size: 0.92rem;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+}
+
+.pudu-brand-tagline {
+  font-size: 0.62rem;
+  color: #60a5fa;
+  font-weight: 800;
+  letter-spacing: 0.5px;
 }
 
 /* ==========================================================================
@@ -1648,6 +1722,11 @@ footer {
   }
   .hero-cta-group .btn {
     width: 100%;
+  }
+  .pudu-credit-badge {
+    flex-direction: column;
+    gap: 8px;
+    border-radius: var(--radius-sm);
   }
 }
 
