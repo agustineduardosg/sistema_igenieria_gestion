@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 75" width="100%" height="100%">
+  <defs>
+    <!-- Gradiente Rojo Borgoña del Isotipo -->
+    <linearGradient id="logoRedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DC2626"/>
+      <stop offset="50%" stop-color="#991B32"/>
+      <stop offset="100%" stop-color="#7A1024"/>
+    </linearGradient>
+
+    <!-- Sombra sutil -->
+    <filter id="logoGlow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#991B32" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- ISOTIPO OFICIAL: Emblema Rectangular Geométrico Rojo -->
+  <g transform="translate(4, 4)" filter="url(#logoGlow)">
+    <!-- Marco Rectangular Exterior -->
+    <rect x="4" y="2" width="28" height="63" rx="1.5" fill="none" stroke="url(#logoRedGrad)" stroke-width="2.8"/>
+    
+    <!-- Relleno Interno -->
+    <rect x="7" y="5" width="22" height="57" fill="url(#logoRedGrad)"/>
+
+    <!-- Marco Interno Blanco Fino -->
+    <rect x="9.5" y="7.5" width="17" height="52" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+    
+    <!-- Geometría Diamante / Reloj de Arena Interno -->
+    <polygon points="11,9.5 25,9.5 18,30" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+    <polygon points="11,57.5 25,57.5 18,37" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+    <line x1="18" y1="30" x2="18" y2="37" stroke="#FFFFFF" stroke-width="1.4"/>
+  </g>
+
+  <!-- TIPOGRAFÍA EJECUTIVA PERFECTAMENTE ACOPLADA -->
+  <!-- "Ingeniería en" -->
+  <text x="42" y="23" font-family="'Outfit', 'Inter', 'Segoe UI', sans-serif" font-weight="700" font-size="18.5" fill="#0f2b48" letter-spacing="-0.2">
+    Ingeniería en
+  </text>
+
+  <!-- "Sistemas de Gestión" -->
+  <text x="42" y="44" font-family="'Outfit', 'Inter', 'Segoe UI', sans-serif" font-weight="900" font-size="21.5" fill="#0f2b48" letter-spacing="-0.4">
+    Sistemas de Gestión
+  </text>
+
+  <!-- LEMA DE LA EMPRESA EXACTAMENTE DEL MISMO ANCHO DEL TÍTULO -->
+  <text x="42" y="61" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="800" font-size="9" fill="#C41E3A" letter-spacing="0.3">
+    NCH - ISO | CALIDAD • AMBIENTE • PREVENCIÓN DE RIESGOS
+  </text>
+</svg>
