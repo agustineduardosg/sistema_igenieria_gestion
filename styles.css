@@ -1,6 +1,6 @@
 /* ==========================================================================
-   DESIGN SYSTEM - INGENIERÍA EN SISTEMAS DE GESTIÓN (v10 PUDU IT Solutions)
-   Acreditación de Desarrollo PUDU IT Solutions en Footer
+   DESIGN SYSTEM - INGENIERÍA EN SISTEMAS DE GESTIÓN (v11 PUDU High-Res Logo)
+   Integración del Logo Oficial en Alta Resolución de PUDU IT SOLUTIONS
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap');
@@ -1523,48 +1523,49 @@ footer {
   gap: 16px;
 }
 
-/* Badge de Créditos PUDU IT SOLUTIONS */
+/* Badge de Créditos PUDU IT SOLUTIONS - MÁXIMA NITIDEZ */
 .pudu-credit-badge {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  padding: 8px 20px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  gap: 14px;
+  padding: 10px 24px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-radius: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   transition: var(--transition);
 }
 
 .pudu-credit-badge:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(0, 102, 255, 0.4);
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(0, 102, 255, 0.5);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
 }
 
 .pudu-credit-text {
-  font-size: 0.82rem;
-  color: #94a3b8;
-  font-weight: 500;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  font-weight: 600;
 }
 
 .pudu-brand-link {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   text-decoration: none;
 }
 
 .pudu-logo-img {
-  width: 36px;
-  height: 36px;
+  width: 52px;
+  height: 52px;
   object-fit: contain;
-  border-radius: 50%;
+  border-radius: 12px;
   background: #ffffff;
-  padding: 2px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  padding: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.9);
 }
 
 .pudu-brand-info {
@@ -1576,17 +1577,18 @@ footer {
 .pudu-brand-name {
   font-family: 'Outfit', sans-serif;
   font-weight: 900;
-  font-size: 0.92rem;
+  font-size: 1rem;
   color: #ffffff;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
   line-height: 1.1;
 }
 
 .pudu-brand-tagline {
-  font-size: 0.62rem;
+  font-size: 0.65rem;
   color: #60a5fa;
   font-weight: 800;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
+  margin-top: 2px;
 }
 
 /* ==========================================================================
@@ -1725,7 +1727,7 @@ footer {
   }
   .pudu-credit-badge {
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
     border-radius: var(--radius-sm);
   }
 }
