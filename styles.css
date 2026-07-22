@@ -1,6 +1,6 @@
 /* ==========================================================================
-   DESIGN SYSTEM - INGENIERÍA EN SISTEMAS DE GESTIÓN (v12 Mobile Perfection)
-   Auditoría de Responsividad Total (Breakpoints 992px, 768px, 576px, 380px)
+   DESIGN SYSTEM - INGENIERÍA EN SISTEMAS DE GESTIÓN (v13 Desktop & Mobile Perfection)
+   Auditoría UX/UI Experta: Eliminación de Colisiones en Desktop y Armonía Móvil
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap');
@@ -32,7 +32,7 @@
   --bg-slate: #0b192c;
   --bg-light: #f4f8fc;
   --text-main: #1e293b;
-  --text-muted: #64748b;
+  --text-muted: #475569;
   --text-light: #94a3b8;
   --border-light: rgba(226, 232, 240, 0.9);
   --border-glass: rgba(255, 255, 255, 0.85);
@@ -63,7 +63,7 @@ html {
 }
 
 section[id] {
-  scroll-margin-top: 90px;
+  scroll-margin-top: 100px;
 }
 
 body {
@@ -181,10 +181,10 @@ img, svg {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 16px 34px;
+  padding: 14px 28px;
   border-radius: var(--radius-sm);
   font-family: 'Outfit', sans-serif;
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 800;
   cursor: pointer;
   transition: var(--transition);
@@ -231,6 +231,11 @@ img, svg {
   box-shadow: 0 14px 32px rgba(37, 211, 102, 0.55);
 }
 
+/* Ocultar acciones exclusivas de móvil en la versión escritorio */
+.mobile-only-actions {
+  display: none !important;
+}
+
 /* ==========================================================================
    ESTRUCTURA DE CABECERA (TOP BAR + STICKY NAVBAR GLASS)
    ========================================================================== */
@@ -275,7 +280,7 @@ img, svg {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(24px) saturate(190%);
   -webkit-backdrop-filter: blur(24px) saturate(190%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
@@ -286,29 +291,35 @@ img, svg {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 86px;
+  height: 84px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .brand-logo img {
-  height: 58px;
+  height: 54px;
   width: auto;
-  max-width: 280px;
+  max-width: 260px;
   object-fit: contain;
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
 }
 
 .nav-link {
-  font-size: 0.94rem;
+  font-size: 0.92rem;
   font-weight: 700;
   color: var(--primary-navy);
   transition: var(--transition);
   position: relative;
-  padding: 4px 0;
+  padding: 6px 0;
   white-space: nowrap;
 }
 
@@ -344,10 +355,10 @@ img, svg {
   background: rgba(15, 43, 72, 0.06);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-sm);
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: var(--primary-navy);
   cursor: pointer;
-  padding: 10px 14px;
+  padding: 8px 12px;
   transition: var(--transition);
 }
 
@@ -390,7 +401,7 @@ img, svg {
 }
 
 .hero-content h1 {
-  font-size: 3.3rem;
+  font-size: 3.2rem;
   letter-spacing: -0.8px;
   margin: 20px 0;
   color: var(--primary-navy);
@@ -404,7 +415,7 @@ img, svg {
 }
 
 .hero-subtitle {
-  font-size: 1.18rem;
+  font-size: 1.15rem;
   color: var(--text-muted);
   margin-bottom: 32px;
   max-width: 640px;
@@ -429,7 +440,7 @@ img, svg {
   display: flex;
   align-items: center;
   gap: 14px;
-  font-size: 1.15rem;
+  font-size: 1.12rem;
   font-weight: 800;
   color: var(--primary-navy);
 }
@@ -1603,11 +1614,11 @@ footer {
 }
 
 /* ==========================================================================
-   AUDITORÍA RESPONSIVA MÓVIL TOTAL (MEDIA QUERIES AUDITADAS)
+   AUDITORÍA RESPONSIVA TOTAL Y COMPATIBILIDAD ESCRITORIO
    ========================================================================== */
 
-/* Breakpoint 1140px (Tablets Horizontales / Laptops Pequeñas) */
-@media (max-width: 1140px) {
+/* Breakpoint 1200px (Escritorios Medianos y Laptops) */
+@media (max-width: 1200px) {
   .nav-menu {
     gap: 14px;
   }
@@ -1615,15 +1626,12 @@ footer {
     font-size: 0.88rem;
   }
   .brand-logo img {
-    height: 50px;
+    height: 48px;
     max-width: 230px;
-  }
-  .hero-content h1 {
-    font-size: 2.8rem;
   }
 }
 
-/* Breakpoint 992px (Tablets Verticales / Menú Hamburguesa) */
+/* Breakpoint 992px (Tablets / Menú Hamburguesa Móvil) */
 @media (max-width: 992px) {
   .top-contact-bar {
     display: none;
@@ -1634,15 +1642,23 @@ footer {
   }
 
   .brand-logo img {
-    height: 48px;
-    max-width: 220px;
+    height: 46px;
+    max-width: 210px;
   }
 
   .mobile-toggle {
     display: block;
   }
 
-  /* Menú Desplegable Glassmorphic en Móviles */
+  /* Mostrar acciones móviles solo dentro del menú desplegable */
+  .mobile-only-actions {
+    display: flex !important;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+    width: 100%;
+  }
+
   .nav-menu {
     display: none;
     flex-direction: column;
@@ -1693,10 +1709,8 @@ footer {
     display: none;
   }
 
-  /* Grillas Adaptativas a 1 Columna */
   .hero-grid, 
-  .guarantee-grid,
-  .expert-grid {
+  .guarantee-grid {
     grid-template-columns: 1fr;
     gap: 36px;
   }
